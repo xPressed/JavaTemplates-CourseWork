@@ -4,19 +4,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta charset="UTF-8">
     <title>Registration</title>
-    <link rel="icon" href="../static/elephant.png">
+    <link rel="icon" th:href="@{/icons/elephant2.png}">
     <script>
-        function redirect() {
+        function redirectTimer() {
             setTimeout('location.href="/login";', 5000);
+        }
+
+        function redirect() {
+            location.href="/login"
         }
     </script>
 </head>
 <body th:attr="onload=${onload}" style="background-color:  #dfdfe9;">
-    <div class="mt-5 pt-5 container-fluid">
+    <div class="mt-4 container-fluid">
         <div class="row justify-content-center">
             <div class="col-10 col-xl-5">
                 <div style="background-color: white; border-radius: 25px">
-                    <img alt="elephant?" src="../static/elephant.png" class="mx-auto d-block" width="200px">
+                    <img alt="elephant?" class="mx-auto d-block" width="200px" src="../static/icons/elephant.png" th:src="@{/icons/elephant.png}">
                     <p class="text-center display-4">Registration</p>
 
                     <form action="#" th:action="@{/registration}" th:object="${customer}" method="post">
@@ -42,6 +46,7 @@
 
                         <div class="d-flex justify-content-center m-3">
                             <button type="submit" class="btn btn-primary btn-lg" style="background-color: #5700f7">Register</button>
+                            <button type="button" onclick="redirect()" class="btn btn-primary btn-lg pb-3 mx-4" style="background-color: #5700f7">Authorization</button>
                         </div>
                     </form>
 

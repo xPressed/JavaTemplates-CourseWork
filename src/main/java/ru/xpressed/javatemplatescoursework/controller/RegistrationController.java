@@ -41,7 +41,7 @@ public class RegistrationController {
             customer.setPassword(securityConfig.encoder().encode(customer.getPassword()));
             customerRepository.save(customer);
             model.addAttribute("message", "Registration Completed");
-            model.addAttribute("onload", "redirect()");
+            model.addAttribute("onload", "redirectTimer()");
         } else {
             bindingResult.rejectValue("username", "customer.username", "This username is already taken!");
         }
