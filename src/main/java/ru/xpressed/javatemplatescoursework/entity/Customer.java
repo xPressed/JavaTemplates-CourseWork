@@ -31,16 +31,6 @@ public class Customer implements UserDetails {
     public List<Order> orders = new ArrayList<>();
 
     @Override
-    public String toString() {
-        return "Customer{" +
-                "username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", repeated='" + repeated + '\'' +
-                ", orders=" + orders +
-                '}';
-    }
-
-    @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return null;
     }
