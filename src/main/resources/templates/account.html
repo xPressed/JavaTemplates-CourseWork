@@ -13,9 +13,13 @@
         function redirect(id) {
             location.href="/account/" + id
         }
+
+        function redirectTimer() {
+            setTimeout('location.href="/account";', 60000);
+        }
     </script>
 </head>
-<body style="background-color:  #dfdfe9;">
+<body style="background-color:  #dfdfe9;" onload="redirectTimer()">
 <div class="my-4 container-fluid">
     <div class="row justify-content-center">
         <div class="col-11 col-xl-11">
