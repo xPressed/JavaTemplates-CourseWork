@@ -6,7 +6,7 @@ plugins {
 
 group = 'ru.xpressed'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = "1.9"
+sourceCompatibility = "18.0.1"
 
 configurations {
     compileOnly {
