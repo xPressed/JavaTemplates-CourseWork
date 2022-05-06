@@ -28,7 +28,7 @@ public class Order {
 
     private String info;
 
-    private SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.y H:m");
+    private SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.y HH:mm");
 
     private String departure;
 

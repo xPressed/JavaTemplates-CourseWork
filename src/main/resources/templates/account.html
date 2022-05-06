@@ -67,20 +67,20 @@
 
                                 <div class="row">
                                     <div class="col-1 ml-4">Id</div>
-                                    <div class="col-2">When</div>
-                                    <div class="col-3">From</div>
-                                    <div class="col-3">To</div>
-                                    <div class="col-2 mr-4">When</div>
+                                    <div class="col-3 col-xl-2">When</div>
+                                    <div class="col-2 col-xl-3">From</div>
+                                    <div class="col-2 col-xl-3">To</div>
+                                    <div class="col-3 col-xl-2 mr-4">When</div>
                                 </div>
                                 <hr class="mx-3" style="background-color: white">
 
                                 <div th:each="order : ${orders}">
                                     <div class="row">
-                                        <div class="col-1 ml-4 mt-2" th:text="${order.id}"></div>
-                                        <div class="col-2 mt-2" th:text="${order.departure}"></div>
-                                        <div class="col-3 mt-2" th:text="${order.load}"></div>
-                                        <div class="col-3 mt-2" th:text="${order.destination}"></div>
-                                        <div class="col-2 mr-4 mt-2" th:text="${order.arrival}"></div>
+                                        <div class="col-1 ml-4 mt-2" th:text="${order.id}">a</div>
+                                        <div class="col-3 col-xl-2 mt-2" th:text="${order.departure}">b</div>
+                                        <div class="col-2 col-xl-3 mt-2" th:text="${order.load}">c</div>
+                                        <div class="col-2 col-xl-3 mt-2" th:text="${order.destination}">d</div>
+                                        <div class="col-3 col-xl-2 mr-4 mt-2" th:text="${order.arrival}">e</div>
                                         <div th:if="${order.btn == 0}">
                                             <button type="button" th:attr="onclick=|redirect('${order.id}')|" title="Cancel and Delete" class="btn btn-secondary btn-lg mr-4" style="color: black; background-color: white; border: 3px solid red; border-radius: 30px; position: absolute; right: 0">X</button>
                                         </div>
