@@ -46,7 +46,7 @@
 ![diagram](https://user-images.githubusercontent.com/90865234/176504413-1f8f6a43-8af8-4f08-857b-38f27d18e578.png) \
 Из диаграммы видно, что любой запрос сначала проходит стадию проверки и только потом выполнения.
 
-## Социальная раздел
+## Социальный раздел
 ### Документация
 :floppy_disk: Пояснительная записка (PDF): [Elephant Express.pdf](https://github.com/xPressed/JavaTemplates-CourseWork/files/9012988/Elephant.Express.pdf)
 
