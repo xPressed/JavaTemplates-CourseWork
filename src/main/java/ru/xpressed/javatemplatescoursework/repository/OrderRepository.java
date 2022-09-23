@@ -7,4 +7,3 @@ import ru.xpressed.javatemplatescoursework.entity.Order;
 @Repository
 public interface OrderRepository extends JpaRepository<Order, Integer> {
 }
-
